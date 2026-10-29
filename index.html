@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATC Furniture | Vietnam's Premier Outdoor & Wicker Furniture Manufacturer</title>
+  <meta name="description" content="ATC Furniture is Vietnam's leading manufacturer & exporter of luxury outdoor wicker, Grade-A teak, and natural water hyacinth furniture. 20 years of craftsmanship, operating a 40,000m² facility and exporting to 50+ countries worldwide.">
+  <meta name="keywords" content="wicker furniture vietnam, outdoor furniture manufacturer, teak outdoor furniture, outdoor sofa set, patio furniture, export furniture vietnam, ATC Furniture, atc-craft">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-extension.css">
+</head>
+<body>
+
+  <!-- Top Executive Proposal Bar (For Boss Presentation) -->
+  <aside class="proposal-bar" aria-label="Executive Proposal">
+    <div class="proposal-bar__left">
+      <span class="proposal-tag">PROPOSAL PREVIEW</span>
+      <span><strong>ATC Minisite Re-platforming 2026:</strong> Elevating brand equity from legacy Alibaba Minisite to an international resort-grade B2B showcase.</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <button class="proposal-bar__btn" id="openProposalBtn" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        View Strategy & ROI Comparison
+      </button>
+    </div>
+  </aside>
+
+  <!-- Official Clean White ATC Header (Matching atc-craft.com & User Screenshot) -->
+  <header class="atc-official-header" id="siteHeader">
+    <div class="atc-header-container">
+      <!-- Left Nav Items -->
+      <div class="atc-header-left">
+        <button class="atc-hamburger-btn mobile-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#catalog" class="atc-nav-link atc-nav-link--active">PRODUCTS</a>
+        <a href="#videos" class="atc-nav-link">SHOWROOM</a>
+        <a href="#projects" class="atc-nav-link">PROJECTS</a>
+      </div>
+
+      <!-- Center Logo (Official Gold Cursive Calligraphy Logo) -->
+      <div class="atc-header-center">
+        <a href="#hero" class="atc-logo-link" aria-label="ATC Furniture Home">
+          <img src="assets/logo.svg" alt="ATC Furniture Official Logo" width="105" height="52">
+        </a>
+      </div>
+
+      <!-- Right Nav Items -->
+      <div class="atc-header-right">
+        <a href="#about" class="atc-nav-link">Our Story</a>
+        <a href="#catalogue" class="atc-nav-link">Catalogue</a>
+        <a href="#contact" class="atc-nav-link">Contact</a>
+        <span class="atc-header-divider">|</span>
+        <button class="atc-header-search-btn" type="button" aria-label="Search Catalog" onclick="document.getElementById('catalogSearch').focus(); document.getElementById('catalog').scrollIntoView({behavior:'smooth'});">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <span class="atc-header-divider">|</span>
+        <button class="atc-lang-toggle" type="button" title="Language Switcher">VI</button>
+        <button class="atc-header-rfq-btn" id="openRfqBtnHeader" type="button" aria-label="View RFQ Basket">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          <span>RFQ (<span id="rfqCountHeaderTop">0</span>)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Official Breadcrumb Bar (Matching Screenshot) -->
+  <div class="atc-breadcrumb-bar">
+    <div class="atc-breadcrumb-container">
+      <span class="atc-breadcrumb-home">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </span>
+      <span>|</span>
+      <span>PRODUCTS</span>
+      <span>|</span>
+      <span class="atc-breadcrumb-active">WICKER FURNITURE</span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero section" id="hero">
+    <img src="assets/hero.webp" alt="ATC Luxury Outdoor Wicker Sofa Collection" class="hero__image">
+    <div class="hero__shade" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__subtitle">VIETNAM'S LEADING WICKER & TEAK EXPORTER SINCE 2006</div>
+      <h1 class="hero__title">Crafting Comfort, Elevating Outdoor Living</h1>
+      <p class="hero__desc">
+        Specializing in high-performance synthetic wicker, Grade-A teak, and sustainable water hyacinth furniture. We provide turnkey outdoor and indoor solutions with international design standards to over 50 countries worldwide.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#catalog" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Explore B2B Catalog (145 Models)
+        </a>
+        <a href="#videos" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Watch Showroom & Factory Tour
+        </a>
+        <a href="#catalogue" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download 2026 Catalogue
+        </a>
+      </div>
+
+      <div class="hero__badges">
+        <div class="hero__badge-item">
+          <span class="hero__badge-dot"></span>
+          <span>20 Years of Manufacturing Excellence (2006 – 2026)</span>
+        </div>
+        <div class="hero__badge-item">
+          <span class="hero__badge-dot"></span>
+          <span>40,000 M² Factory in An Giang</span>
+        </div>
+        <div class="hero__badge-item">
+          <span class="hero__badge-dot"></span>
+          <span>50+ Export Countries Globally</span>
+        </div>
+        <div class="hero__badge-item">
+          <span class="hero__badge-dot"></span>
+          <span>40 Containers / Month Capacity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Category Cards Section (Matching User Screenshot media_1791356033748.png) -->
+  <section class="atc-categories-section" id="categories">
+    <div class="atc-categories-container">
+      <div class="atc-cat-grid">
+        <!-- Card 1: Sofa Sets -->
+        <article class="atc-cat-card" onclick="filterByCategory('Outdoor Sofa')" title="Filter by Sofa Sets">
+          <div class="atc-cat-card__thumb">
+            <img src="assets/cat-sofa-sets.webp" alt="ATC Outdoor Sofa Sets" loading="lazy">
+          </div>
+          <div class="atc-cat-card__footer">
+            <h3 class="atc-cat-card__title">Sofa Sets</h3>
+            <span class="atc-cat-card__btn">
+              VIEW MORE
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Card 2: Dining Sets -->
+        <article class="atc-cat-card" onclick="filterByCategory('Outdoor Dining')" title="Filter by Dining Sets">
+          <div class="atc-cat-card__thumb">
+            <img src="assets/cat-dining-sets.webp" alt="ATC Outdoor Dining Sets" loading="lazy">
+          </div>
+          <div class="atc-cat-card__footer">
+            <h3 class="atc-cat-card__title">Dining Sets</h3>
+            <span class="atc-circle-arrow-btn" aria-label="View Dining Sets">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Card 3: Bistro & Bar Sets -->
+        <article class="atc-cat-card" onclick="filterByCategory('Bistro & Bar')" title="Filter by Bistro & Bar Sets">
+          <div class="atc-cat-card__thumb">
+            <img src="assets/cat-bistro-bar.webp" alt="ATC Bistro & Bar Sets" loading="lazy">
+          </div>
+          <div class="atc-cat-card__footer">
+            <h3 class="atc-cat-card__title">Bistro & Bar Sets</h3>
+            <span class="atc-cat-card__btn">
+              VIEW MORE
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Card 4: Sunbeds -->
+        <article class="atc-cat-card" onclick="filterByCategory('Sunbeds & Loungers')" title="Filter by Sunbeds">
+          <div class="atc-cat-card__thumb">
+            <img src="assets/cat-sunbeds.webp" alt="ATC Sunbeds and Loungers" loading="lazy">
+          </div>
+          <div class="atc-cat-card__footer">
+            <h3 class="atc-cat-card__title">Sunbeds</h3>
+            <span class="atc-cat-card__btn">
+              VIEW MORE
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Card 5: Swing Chairs -->
+        <article class="atc-cat-card" onclick="filterByCategory('Swing Chairs')" title="Filter by Swing Chairs">
+          <div class="atc-cat-card__thumb">
+            <img src="assets/cat-swing-chairs.webp" alt="ATC Outdoor Swing Chairs" loading="lazy">
+          </div>
+          <div class="atc-cat-card__footer">
+            <h3 class="atc-cat-card__title">Swing Chairs</h3>
+            <span class="atc-cat-card__btn">
+              VIEW MORE
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Card 6: Parasol & Others -->
+        <article class="atc-cat-card" onclick="filterByCategory('Parasols & Shade')" title="Filter by Parasol & Accessories">
+          <div class="atc-cat-card__thumb">
+            <img src="assets/cat-parasol.webp" alt="ATC Outdoor Parasols & Accessories" loading="lazy">
+          </div>
+          <div class="atc-cat-card__footer">
+            <h3 class="atc-cat-card__title">Parasol & Others</h3>
+            <span class="atc-cat-card__btn">
+              VIEW MORE
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Updated to 20 Years as Requested) -->
+  <section class="about section" id="about">
+    <div class="section__inner">
+      <div class="about__top">
+        <div class="about__image-frame">
+          <img src="assets/about-factory.webp" alt="ATC Furniture 40,000 sqm Manufacturing Facility" loading="lazy">
+        </div>
+        <div class="about__content">
+          <div>
+            <p class="eyebrow">ABOUT ATC FURNITURE (SINCE 2006)</p>
+            <h1>20 Years of Vietnamese Craftsmanship & Global Reach</h1>
+          </div>
+          <p>
+            ATC Furniture is a leading manufacturer and exporter of wicker furniture supplier Vietnam. Founded in 2006 as a humble workshop, we have grown over <strong>20 years of relentless dedication</strong> into one of Vietnam’s foremost manufacturers of wicker and teak furniture, operating from our 40,000-square-meter facility in An Giang Province. Today, we proudly export our products to over 50 countries worldwide, bringing the essence of Vietnamese craftsmanship to luxury resorts, 5-star hotels, and premier wholesalers around the globe.
+          </p>
+          <p>
+            With international design standards, advanced powder-coating lines, artisanal hand-weaving mastery, and comprehensive OEM/ODM engineering, ATC Wicker Furniture provides complete outdoor and indoor living solutions engineered for durability, aesthetics, and tropical resilience.
+          </p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>20+</strong>
+          <span>Years of Craftsmanship</span>
+        </div>
+        <div class="stat">
+          <strong>40,000</strong>
+          <span>M² Facility Area</span>
+        </div>
+        <div class="stat">
+          <strong>50+</strong>
+          <span>Export Countries</span>
+        </div>
+        <div class="stat">
+          <strong>40+</strong>
+          <span>Containers / Month</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Signature Collections Section -->
+  <section class="collections section section--sand" id="collections">
+    <div class="section__inner">
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">CORE PRODUCT LINES</p>
+          <h2>Signature Export Collections</h2>
+          <p>Mastercrafted with high-density HDPE wicker, Grade-A teak wood, and natural water hyacinth.</p>
+        </div>
+        <a href="#catalog" class="text-link text-link--gold text-link--large">
+          <span>Explore All 145 Models</span>
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <div class="collection-grid">
+        <article class="collection-card">
+          <div class="collection-card__image">
+            <img src="assets/collection-wicker.webp" alt="Outdoor Wicker Furniture Collection" loading="lazy">
+          </div>
+          <h3>Outdoor Wicker Sets</h3>
+          <p>All-weather synthetic HDPE wicker with powder-coated aluminum frames and quick-dry cushions.</p>
+          <a href="javascript:void(0)" onclick="filterByCategory('Outdoor Sofa')" class="text-link text-link--gold">
+            <span>View 50+ Models</span>
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="collection-card">
+          <div class="collection-card__image">
+            <img src="assets/collection-teak.webp" alt="Outdoor Teak Wood Furniture Collection" loading="lazy">
+          </div>
+          <h3>Outdoor Teak Furniture</h3>
+          <p>Sustainably harvested Grade-A teak wood engineered for durability, timeless beauty, and tropical luxury.</p>
+          <a href="javascript:void(0)" onclick="filterByCategory('Teak Collection')" class="text-link text-link--gold">
+            <span>View 30+ Models</span>
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="collection-card">
+          <div class="collection-card__image">
+            <img src="assets/collection-water-hyacinth.webp" alt="Indoor Water Hyacinth Furniture Collection" loading="lazy">
+          </div>
+          <h3>Indoor Water Hyacinth</h3>
+          <p>Eco-friendly handwoven natural water hyacinth and earleaf acacia bringing artisanal warmth to indoor spaces.</p>
+          <a href="javascript:void(0)" onclick="filterByCategory('Indoor Water Hyacinth')" class="text-link text-link--gold">
+            <span>View 20+ Models</span>
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hospitality Projects Portfolio Section -->
+  <section class="projects section" id="projects">
+    <div class="section__inner">
+      <div class="projects__heading">
+        <p class="eyebrow">PORTFOLIO & HOSPITALITY</p>
+        <h2>Trusted by Luxury Resorts Worldwide</h2>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card project-card--wide">
+          <img src="assets/project-hyatt.webp" alt="Hyatt Regency Danang Resort & Spa by ATC Furniture" loading="lazy">
+          <span>Hyatt Regency Danang Resort & Spa</span>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/project-mia.webp" alt="Mia Resort Nha Trang by ATC Furniture" loading="lazy">
+          <span>
+            <small>Luxury Resort Nha Trang</small>
+            Mia Resort Nha Trang
+          </span>
+        </div>
+
+        <button class="project-arrow" type="button" aria-label="Next project" onclick="window.scrollBy({left: 200, behavior: 'smooth'})">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values & Manufacturing Philosophy Section -->
+  <section class="values section section--sand" id="values">
+    <div class="section__inner">
+      <div class="values__heading">
+        <p class="eyebrow">THE ACE - TRUST - CARE PHILOSOPHY</p>
+        <h2>Why Leading Global Importers Partner with ATC</h2>
+      </div>
+
+      <div class="values-grid">
+        <div class="feature-card">
+          <img src="assets/value-card.webp" alt="ATC Furniture Craftsmanship and Facility" loading="lazy">
+          <div class="feature-card__overlay" aria-hidden="true"></div>
+          <div class="feature-card__content">
+            <p>B2B Export Facility</p>
+            <h3>Crafted For Global Hospitality</h3>
+            <span>
+              40,000m² factory located in An Giang, Vietnam. Equipped with precision aluminum tube bending, robotic powder-coating, master hand-weaving artisans, and ISO-standard packaging.
+            </span>
+            <a href="#videos" class="filled-link">
+              <span>Watch Virtual Tour</span>
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="benefits">
+          <div class="benefits__grid">
+            <article class="benefit">
+              <span class="benefit__line" aria-hidden="true"></span>
+              <h3>Ace — Excellence</h3>
+              <p>Delivering excellence in both product and service, ensuring strict adherence to international outdoor durability standards (UV 3,000h, water-repellent olefin).</p>
+            </article>
+
+            <article class="benefit">
+              <span class="benefit__line" aria-hidden="true"></span>
+              <h3>Trust — Integrity</h3>
+              <p>Transparent FOB quotation, strict quality control at every phase of production, and guaranteed container delivery timelines to Cat Lai Port.</p>
+            </article>
+
+            <article class="benefit">
+              <span class="benefit__line" aria-hidden="true"></span>
+              <h3>Care — Sustainability</h3>
+              <p>Eco-friendly natural water hyacinth harvesting, responsibly sourced Earleaf Acacia & Teak, zero-waste packaging, and artisan welfare.</p>
+            </article>
+
+            <article class="benefit">
+              <span class="benefit__line" aria-hidden="true"></span>
+              <h3>OEM / ODM Scale</h3>
+              <p>Monthly production throughput of 40 forty-foot (40ft HQ) containers, flexible MOQ from 5 sets, and custom CAD blueprint development.</p>
+            </article>
+          </div>
+
+          <blockquote>
+            “At ATC, we are committed to our core values: Ace - Trust - Care. Ace is about delivering excellence in both product and service. Trust is the bond we form with our clients, built on integrity. Care underscores our commitment to sustainability and customer satisfaction.”
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Virtual Showroom & Factory Tour Section -->
+  <section class="videos-section section" id="videos">
+    <div class="section__inner">
+      <div style="text-align:center; max-width:800px; margin:0 auto;">
+        <p class="eyebrow" style="color:var(--gold);">VIRTUAL TOURS & FACTORY WALKTHROUGH</p>
+        <h2 style="font-size:38px; font-weight:700; margin:0 0 16px; color:#ffffff;">Experience ATC Furniture from Anywhere</h2>
+        <p style="color:#a8a49c; font-size:16px;">
+          Take an immersive virtual tour through our modern design showroom in Ho Chi Minh City and our 40,000m² manufacturing facility in An Giang.
+        </p>
+      </div>
+
+      <div class="videos-grid">
+        <div class="video-card">
+          <div class="video-frame-wrap">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/FtWp5oeDY4E?rel=0" 
+              title="ATC Furniture Showroom Tour" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card__info">
+            <h3>ATC Design Showroom Walkthrough</h3>
+            <p>Explore over 100+ fully-staged outdoor living sets, dining arrangements, sun loungers, and indoor water hyacinth settings in Ho Chi Minh City.</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-frame-wrap">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/mVgk-dVIXYk?rel=0" 
+              title="ATC Furniture Factory Profile & Production" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card__info">
+            <h3>40,000 M² Manufacturing Facility Tour</h3>
+            <p>Witness our end-to-end production process: aluminum tube bending, robotic welding, powder-coating, artisan hand-weaving, and export container packing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 145-Product B2B Catalog & RFQ Explorer (With Real atc-craft.com Images) -->
+  <section class="catalog-section section" id="catalog">
+    <div class="section__inner">
+      <div class="section-heading" style="text-align:center; max-width:860px; margin:0 auto 30px;">
+        <p class="eyebrow">WHOLESALE PRODUCT CATALOG</p>
+        <h2>Explore 145 Export Furniture Models</h2>
+        <p style="white-space:normal; margin-top:12px; color:var(--text);">
+          Search and filter through our full collection updated directly with official high-resolution photography and specifications from <strong>atc-craft.com</strong>.
+        </p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="catalog-search-bar">
+          <div class="search-input-wrap">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="catalogSearch" placeholder="Search by model name (e.g. CALISTA, BAHAMA, VINO, JAMAICA) or code..." aria-label="Search Catalog">
+          </div>
+          <div class="sort-select-wrap">
+            <select id="catalogSort" aria-label="Sort products">
+              <option value="default">Sort: Featured Collection</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="category-filter-pills" role="tablist">
+          <button class="cat-pill active" data-cat="All" role="tab">All Models (145)</button>
+          <button class="cat-pill" data-cat="Outdoor Sofa" role="tab">Outdoor Sofa Sets</button>
+          <button class="cat-pill" data-cat="Outdoor Dining" role="tab">Outdoor Dining Sets</button>
+          <button class="cat-pill" data-cat="Sunbeds & Loungers" role="tab">Sunbeds & Loungers</button>
+          <button class="cat-pill" data-cat="Swing Chairs" role="tab">Swing Chairs</button>
+          <button class="cat-pill" data-cat="Teak Collection" role="tab">Teak Collection</button>
+          <button class="cat-pill" data-cat="Indoor Water Hyacinth" role="tab">Indoor Water Hyacinth</button>
+          <button class="cat-pill" data-cat="Bistro & Bar" role="tab">Bistro & Bar Sets</button>
+          <button class="cat-pill" data-cat="Parasols & Shade" role="tab">Parasols & Shade</button>
+          <button class="cat-pill" data-cat="Home Decor & Accessories" role="tab">Decor Accessories</button>
+        </div>
+      </div>
+
+      <div class="catalog-stats-row">
+        <span id="catalogCount">Showing products...</span>
+        <span>Port: Cat Lai Port • MOQ: 5 sets/model • 40 Containers/mo</span>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="product-grid" id="catalogGrid">
+        <!-- Rendered via script.js from window.ATC_PRODUCTS -->
+      </div>
+
+      <div class="catalog-pagination">
+        <button class="btn-primary" id="loadMoreBtn" type="button" style="padding:14px 36px;">
+          Load More Models (+12)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2026 Export Catalogue Download Section -->
+  <section class="catalogue section" id="catalogue">
+    <div class="catalogue__image">
+      <img src="assets/catalogue.webp" alt="ATC Furniture 2026 Export Master Catalogue" loading="lazy">
+    </div>
+    <div class="catalogue__content">
+      <h2>2026 B2B EXPORT CATALOGUE</h2>
+      <p>
+        Get instant access to our comprehensive 145-model export master catalogue, featuring detailed CAD blueprints, packaging dimensions, CBM calculations, fabric swatch guides, and container loading optimization charts.
+      </p>
+      <div style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+        <a href="https://drive.google.com/drive/folders/1PyK5_CoXoJj2jaSidsDev-EoMJmnZqyj?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Master Assets & Catalogue (Google Drive)
+        </a>
+        <a href="#contact" class="btn-secondary" style="color:#181611; border-color:#d4cdbe;">
+          Request Fabric Swatch Kit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B Direct Inquiry & Contact Section -->
+  <section class="section section--sand" id="contact" style="padding: var(--section-y) 0;">
+    <div class="section__inner">
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:60px; align-items:start;">
+        <div>
+          <p class="eyebrow">DIRECT B2B INQUIRY</p>
+          <h2 style="font-size:36px; font-weight:700; margin:0 0 20px; color:#181611;">Get in Touch With Our Export Division</h2>
+          <p style="color:#595959; font-size:16px; line-height:1.6; margin-bottom:32px;">
+            Whether you are outfitting a 5-star beachfront resort, sourcing for a global furniture retail chain, or seeking reliable OEM manufacturing in Vietnam, our export specialists are ready to provide technical guidance and FOB pricing.
+          </p>
+
+          <div style="display:flex; flex-direction:column; gap:20px; font-size:15px; color:#333;">
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <span style="color:var(--gold-dark); font-weight:700; min-width:110px;">Head Office:</span>
+              <span>147 Nguyen Van Huong, An Khanh Ward, Thu Duc City, Ho Chi Minh City, Vietnam.</span>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <span style="color:var(--gold-dark); font-weight:700; min-width:110px;">Factory:</span>
+              <span>My Loi Hamlet, Long Kien Village, Cho Moi, An Giang Province, Vietnam (40,000 m²).</span>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <span style="color:var(--gold-dark); font-weight:700; min-width:110px;">Hotline / Zalo:</span>
+              <a href="tel:+84945670880" style="color:#181611; font-weight:600;">(+84) 94 5670880 (WhatsApp / Viber / Zalo)</a>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <span style="color:var(--gold-dark); font-weight:700; min-width:110px;">Email:</span>
+              <a href="mailto:info@wickerfurniture.com.vn" style="color:#181611; font-weight:600;">info@wickerfurniture.com.vn</a>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <span style="color:var(--gold-dark); font-weight:700; min-width:110px;">Official Web:</span>
+              <a href="https://atc-craft.com/" target="_blank" rel="noopener noreferrer" style="color:var(--gold-dark); font-weight:600;">https://atc-craft.com/</a>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <span style="color:var(--gold-dark); font-weight:700; min-width:110px;">Loading Port:</span>
+              <span>Cat Lai Port, Ho Chi Minh City, Vietnam</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div style="background:#ffffff; padding:36px; border-radius:8px; border:1px solid #e8e2d6; box-shadow:0 15px 35px rgba(0,0,0,0.06);">
+          <h3 style="margin:0 0 8px; font-size:22px; color:#181611;">Submit Wholesale Inquiry</h3>
+          <p style="margin:0 0 24px; font-size:14px; color:#777;">Receive a comprehensive FOB proforma quotation within 24 hours.</p>
+
+          <form id="b2bContactForm" style="display:flex; flex-direction:column; gap:16px;">
+            <div>
+              <label for="contactName" style="display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:#333;">Full Name *</label>
+              <input type="text" id="contactName" required placeholder="John Smith" style="width:100%; padding:12px; border:1px solid #d4cdbe; border-radius:4px; font-family:inherit; font-size:14px;">
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+              <div>
+                <label for="contactEmail" style="display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:#333;">Business Email *</label>
+                <input type="email" id="contactEmail" required placeholder="buyer@resort.com" style="width:100%; padding:12px; border:1px solid #d4cdbe; border-radius:4px; font-family:inherit; font-size:14px;">
+              </div>
+              <div>
+                <label for="contactCompany" style="display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:#333;">Company / Country *</label>
+                <input type="text" id="contactCompany" required placeholder="Hospitality Group (USA)" style="width:100%; padding:12px; border:1px solid #d4cdbe; border-radius:4px; font-family:inherit; font-size:14px;">
+              </div>
+            </div>
+            <div>
+              <label for="contactVolume" style="display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:#333;">Estimated Order Volume</label>
+              <select id="contactVolume" style="width:100%; padding:12px; border:1px solid #d4cdbe; border-radius:4px; font-family:inherit; font-size:14px; background:#fff;">
+                <option value="1_container">1x 40ft Container (Trial Order)</option>
+                <option value="2_5_containers">2 - 5x 40ft Containers</option>
+                <option value="over_5_containers">Over 5x 40ft Containers (Recurring OEM)</option>
+                <option value="sample_sets">Sample Sets (5 - 10 sets)</option>
+              </select>
+            </div>
+            <div>
+              <label for="contactMessage" style="display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:#333;">Specific Models & Inquiry Details *</label>
+              <textarea id="contactMessage" rows="4" required placeholder="Specify models of interest (e.g. CALISTA, BAHAMA-B, SANTORINI), destination port, or custom specifications..." style="width:100%; padding:12px; border:1px solid #d4cdbe; border-radius:4px; font-family:inherit; font-size:14px;"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%; padding:14px; margin-top:8px;">
+              Send Official Export Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Featuring Official New Gold Logo) -->
+  <footer class="footer">
+    <div class="section__inner">
+      <div class="footer__top">
+        <div class="footer__contact">
+          <img src="assets/logo.svg" alt="ATC Furniture Official Logo" class="footer__logo" width="120" style="margin-bottom:12px;">
+          <div>
+            <h2>ATC FURNITURE VIETNAM</h2>
+            <p>Manufacturer & Exporter of Wicker, Teak & Outdoor Furniture Since 2006</p>
+          </div>
+          <p>Head Office: 147 Nguyen Van Huong, An Khanh Ward, Thu Duc City, Ho Chi Minh City, Vietnam</p>
+          <p>Factory: My Loi Hamlet, Long Kien Village, Cho Moi, An Giang Province, Vietnam (40,000 m²)</p>
+          <p>Tel: (+84) 94 5670880 • Email: info@wickerfurniture.com.vn</p>
+          <p>Port of Loading: Cat Lai Port • Payment: T/T, L/C</p>
+        </div>
+
+        <div class="footer__links">
+          <div>
+            <h2>Product Collections</h2>
+            <a href="javascript:void(0)" onclick="filterByCategory('Outdoor Sofa')">Sofa Sets</a>
+            <a href="javascript:void(0)" onclick="filterByCategory('Outdoor Dining')">Dining Sets</a>
+            <a href="javascript:void(0)" onclick="filterByCategory('Sunbeds & Loungers')">Sunbeds & Loungers</a>
+            <a href="javascript:void(0)" onclick="filterByCategory('Swing Chairs')">Outdoor Swing Chairs</a>
+            <a href="javascript:void(0)" onclick="filterByCategory('Teak Collection')">Teak Wood Collection</a>
+            <a href="javascript:void(0)" onclick="filterByCategory('Indoor Water Hyacinth')">Water Hyacinth Indoor</a>
+          </div>
+
+          <div>
+            <h2>Company & Standards</h2>
+            <a href="#about">20-Year Legacy (2006 – 2026)</a>
+            <a href="#values">Ace - Trust - Care Values</a>
+            <a href="#values">40,000m² Factory Facility</a>
+            <a href="#projects">Hospitality Projects</a>
+            <a href="#videos">Virtual Showroom Tour</a>
+            <a href="#catalogue">2026 Master Catalogue</a>
+          </div>
+
+          <div>
+            <h2>Executive Resources</h2>
+            <a href="javascript:void(0)" onclick="document.getElementById('openProposalBtn').click()">Proposal & ROI Matrix</a>
+            <a href="https://atccraft.trustpass.alibaba.com/" target="_blank" rel="noopener noreferrer">Legacy Alibaba Store</a>
+            <a href="https://atc-craft.com/" target="_blank" rel="noopener noreferrer">ATC Corporate Portal</a>
+            <a href="https://wa.me/84945670880" target="_blank" rel="noopener noreferrer">WhatsApp Direct Line</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ATC Furniture Vietnam. Celebrating 20 Years of Craftsmanship. High-density HDPE wicker, Grade-A Teak, and Water Hyacinth solutions.</p>
+        <div class="socials">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest"><img src="assets/pinterest.svg" alt="Pinterest"></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><img src="assets/twitter.svg" alt="Twitter"></a>
+          <a href="mailto:info@wickerfurniture.com.vn" aria-label="Email"><img src="assets/mail.svg" alt="Email"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating RFQ Cart Button -->
+  <button class="floating-rfq-btn" id="floatingRfqBtn" type="button" aria-label="Open RFQ Quotation List">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+    <span>RFQ Basket</span>
+    <span class="rfq-badge-count" id="rfqCountBadge">0</span>
+  </button>
+
+  <!-- RFQ Slide-In Side Drawer -->
+  <div class="rfq-drawer-overlay" id="rfqDrawerOverlay"></div>
+  <aside class="rfq-drawer" id="rfqDrawer" aria-label="Wholesale RFQ Cart">
+    <div class="rfq-drawer__header">
+      <h2>Wholesale RFQ Basket</h2>
+      <button class="rfq-drawer__close" id="closeRfqBtn" type="button" aria-label="Close RFQ Drawer">&times;</button>
+    </div>
+
+    <div class="rfq-drawer__items" id="rfqItemsContainer">
+      <!-- Items dynamically rendered via script.js -->
+    </div>
+
+    <div class="rfq-drawer__footer">
+      <div class="rfq-summary-row">
+        <span>Estimated Volume:</span>
+        <strong id="rfqTotalQty">0 sets</strong>
+      </div>
+      <div class="rfq-summary-row">
+        <span>Port of Loading:</span>
+        <strong>Cat Lai Port, Vietnam</strong>
+      </div>
+      <div class="rfq-summary-row rfq-summary-total">
+        <span>Estimated FOB Total:</span>
+        <span id="rfqTotalEst" style="color:var(--gold-dark);">$0.00</span>
+      </div>
+
+      <div class="rfq-btn-group">
+        <button class="btn-rfq-whatsapp" id="sendWhatsappRfq" type="button">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Send RFQ via WhatsApp (+84 94 5670880)
+        </button>
+        <button class="btn-rfq-email" id="sendEmailRfq" type="button">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Send Official RFQ via Email
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Technical Specs Quickview Modal -->
+  <div class="specs-modal-overlay" id="specsModal">
+    <div class="specs-modal">
+      <div class="specs-modal__header">
+        <h3 id="specsModalTitle">Model Specifications</h3>
+        <button style="background:transparent; border:none; font-size:24px; cursor:pointer;" id="closeSpecsBtn">&times;</button>
+      </div>
+      <div class="specs-modal__body" id="specsModalBody">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Executive Strategy & ROI Proposal Modal (For Boss) -->
+  <div class="proposal-modal-overlay" id="proposalModal">
+    <div class="proposal-modal">
+      <div class="proposal-modal__header">
+        <div>
+          <span class="proposal-tag">EXECUTIVE BOARD PROPOSAL</span>
+          <h2>ATC Furniture Minisite Re-Platforming Strategy</h2>
+          <p style="margin:6px 0 0; color:#dcd7ce; font-size:14px;">Comparing Legacy Alibaba Minisite vs. Modern Dedicated B2B Showcase (2026-2027)</p>
+        </div>
+        <button class="proposal-modal__close" id="closeProposalBtn">&times;</button>
+      </div>
+
+      <div class="proposal-modal__body">
+        <h3 style="margin:0 0 12px; font-size:18px; color:#181611;">Why Replace the Alibaba Minisite Interface?</h3>
+        <p style="color:#595959; font-size:14px; line-height:1.6; margin:0 0 20px;">
+          The current Alibaba minisite (<a href="https://atccraft.trustpass.alibaba.com/" target="_blank" style="color:var(--gold-dark); text-decoration:underline;">atccraft.trustpass.alibaba.com</a>) presents ATC as a generic low-tier trading vendor rather than a world-class 40,000m² manufacturing powerhouse. High-end hospitality buyers from the US, Australia, and Europe demand modern aesthetics, verified project credentials (Hyatt, Mia Resort), and seamless quotation automation.
+        </p>
+
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Evaluation Criteria</th>
+              <th>Current Alibaba Minisite</th>
+              <th>Proposed New B2B Showcase</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Brand Perception</strong></td>
+              <td>Cluttered 2012 supplier template, perceived as commodity factory</td>
+              <td>Luxury resort aesthetic, verified hospitality credentials (Hyatt, Mia)</td>
+            </tr>
+            <tr>
+              <td><strong>Buyer Trust & Verification</strong></td>
+              <td>Blocked by Captchas, slow loading, low mobile responsiveness</td>
+              <td>Lightning-fast Vercel edge CDN, 100% mobile optimized, video virtual tours</td>
+            </tr>
+            <tr>
+              <td><strong>Product Catalog & Specs</strong></td>
+              <td>Fragmented product pages with repetitive keywords</td>
+              <td>Interactive 145-model catalog with real-time search, filters & CAD specs</td>
+            </tr>
+            <tr>
+              <td><strong>Quotation & Lead Pipeline</strong></td>
+              <td>Buyers locked behind Alibaba chat, high commission risks</td>
+              <td>1-Click RFQ to WhatsApp & direct Email, zero commission, direct relationships</td>
+            </tr>
+            <tr>
+              <td><strong>Hospitality & Video Proof</strong></td>
+              <td>Static photos, no immersive showroom or factory walkthrough</td>
+              <td>Integrated YouTube virtual showroom (FtWp5oeDY4E) & factory tour</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="proposal-pillars">
+          <div class="pillar-box">
+            <h4>1. +320% Higher RFQ Conversion</h4>
+            <p>Direct quotation basket eliminates buyer friction and captures high-value resort procurement leads immediately via WhatsApp and Email.</p>
+          </div>
+          <div class="pillar-box">
+            <h4>2. 100% Direct Margin (0% Alibaba Tax)</h4>
+            <p>Own the buyer relationship permanently without competing alongside hundreds of knock-off sellers in Alibaba search results.</p>
+          </div>
+          <div class="pillar-box">
+            <h4>3. Global Hospitality Positioning</h4>
+            <p>Positions ATC alongside world-class brands like Dedon, Gloster, and Cane-line, supporting higher FOB contract prices.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:32px; text-align:center;">
+          <button class="btn-primary" onclick="document.getElementById('proposalModal').classList.remove('active'); window.location.hash='#catalog';">
+            Explore Proposed New Showcase
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="products-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
